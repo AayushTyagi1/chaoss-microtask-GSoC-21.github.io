@@ -8,6 +8,19 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-black fixed-top">
+        <ul class="navbar-nav mr-sm-auto">
+            <li class="nav-link">
+                <a class="navbar-brand active" href="#">Sample 1</a>
+            </li>
+            <li class="nav-link">
+                <a class="navbar-brand" href="../sample 2/index.html">Sample 2</a>
+            </li>
+            <li class="nav-link">
+                <a class="navbar-brand" href="../sample 3/index.html">Sample 3</a>
+            </li>
+        </ul>
+    </nav>
     <h2>Focus Areas by Working Group</h2>
     <h5>
         CHAOSS metrics are sorted into Focus Areas. CHAOSS uses a Goal-Question-Metric format to present metrics.
@@ -125,11 +138,11 @@
     </div>
 
     <script>
-        var coll = document.getElementsByClassName("collapsible");
+        var a = document.getElementsByClassName("collapsible");
         var i;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
+        for (i = 0; i < a.length; i++) {
+            a[i].addEventListener("click", function () {
                 this.classList.toggle("active");
                 var content = this.nextElementSibling;
                 if (content.style.display === "block") {
