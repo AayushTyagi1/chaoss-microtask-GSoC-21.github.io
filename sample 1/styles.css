@@ -1,0 +1,50 @@
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  border-style: dotted;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  color: #041efc;
+  border-style: dotted;
+}
+
+.collapsible {
+  background-color: rgb(86, 189, 182);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
